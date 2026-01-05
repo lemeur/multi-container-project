@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:5000"
+    environment:
+      - NVWB_TRIM_PREFIX=true
+  redis:
+    image: "redis:alpine"
